@@ -10,7 +10,9 @@
     "startprod": "HTTP_PORT=8080 HTTPS_PORT=8443 nodemon app/index.js",
     "startproddebug": "DEBUG=true HTTP_PORT=8080 HTTPS_PORT=8443 nodemon app/index.js",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "heroku-postbuild": "webpack && npm run startprod",
+
   },
   "repository": {
     "type": "git",
