@@ -131,6 +131,7 @@ app.post('/api/formdata', jwtAuth(), (req, res) => {
 // upload.fields is mutler middleware that requires formData with a name field.
 // File size is currently limited to 10mb through bodyParser.
 app.post('/api/clarifai', upload.fields([{ name: 'image' }]), (req, res, next) => {
+  console.log('Uploads a picture --> ',req.files.image[0].path)
   // get uploaded image file path and add to request
   let originalImageFilePath = path.join(__dirname, '/../', req.files.image[0].path);
   req.imagePath = originalImageFilePath;
@@ -161,6 +162,12 @@ app.post('/api/clarifai', upload.fields([{ name: 'image' }]), (req, res, next) =
     }
   })
 });
+
+app.post('/picture',(req,res) => {
+
+  console.log('It comes here');
+  console.log('Req.body ---> ',req.body);
+})
 
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, '..', '/public/index.html'));
