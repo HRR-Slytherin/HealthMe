@@ -4,7 +4,7 @@
   "description": "Health journalling app - hr greenfield 1",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"Error: no test specified\"",
     "pack": "webpack --watch",
     "start": "nodemon app/index.js",
     "startprod": "HTTP_PORT=8080 HTTPS_PORT=8443 nodemon app/index.js",
