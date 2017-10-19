@@ -3,11 +3,26 @@
 
 > Daily Health, Nutrition, and Fitness Journalling app to help identify personal patterns / reactions
 
-## Team
+## Original Team
 
   - __Product Owner__: Jared Meek
   - __Scrum Master__: Iona Jewel
   - __Development Team Members__: Phillip Schmidt
+
+## Added Features Team
+
+  - __Product Owner__: Ed Plato
+  - __Scrum Master__: Boiskhon Bakhodirov
+  - __Development Team Members__: Dominic Ma
+
+
+> **New Features:**
+
+> - Google Cloud Natural Language Machine Learning API for journal text sentiment analysis.
+> - Clarifai Image Visual Recognition API for improved UX food ingredient entry.
+> - Web Speech API for improved journal input accessibility.
+> - Various Bug Fixes
+
 
 ## Usage
 
@@ -58,7 +73,7 @@ To start in debug mode (enables more server-side logging)
  npm run startproddebug
 
 ### Deployment
- - Deployed to: https://beanieio.co.uk 
+ - Deployed to: https://beanieio.herokuapp.com/
  - Deployed on: Digital Ocean $10/m droplet, ubuntu 16.04 base
 
 - Helpful guides for Digital Ocean Ubuntu MEAN setup Links
@@ -69,6 +84,7 @@ To start in debug mode (enables more server-side logging)
 ### Roadmap
 
 View the project roadmap [here](https://waffle.io/beanieio/beanieio)
+View the new feature roadmap [here](https://waffle.io/HRR-Slytherin/beanieio)
 
 
 ## Contributing
